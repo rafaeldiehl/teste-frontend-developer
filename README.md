@@ -104,7 +104,7 @@ As seguintes features foram adicionadas ao projeto:
 
 A partir do wireframe, desenvolvi a seguinte interface de usuário.
 
-![Template da página desenvolvida](https://github.com/rafaeldiehl/teste-frontend-developer/blob/master/ui.png?raw=true)
+![Template da página desenvolvida](https://github.com/rafaeldiehl/teste-frontend-developer/blob/master/design/ui.png)
 
 <h2 id="status">Status do Projeto</h2>
 
