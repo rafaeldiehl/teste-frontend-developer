@@ -1,0 +1,59 @@
+// Os arquivos Sass estão modularizados e divididos em categorias.
+// O arquivo CSS processado está em: ../css/main.css
+
+// ************************* Abstrações *************************
+// Esta categoria contém as variáveis e animações usadas no sistema.
+@import './abstracts/variables';
+@import './abstracts/animations';
+
+// **************************** Base *****************************
+// Aqui está a base do sistema, com o reset de margem e regras de tipografia.
+@import './base/reset';
+@import './base/typograph';
+
+// ************************* Componentes *************************
+// Esta categoria organiza os principais componentes da página.
+@import './components/buttons';
+@import './components/navbar';
+@import './components/main';
+@import './components/about';
+@import './components/services';
+@import './components/questions';
+@import './components/cta';
+@import './components/footer';
+
+// ***************************************************************
+
+.container {
+  // Container que coloca limite no tamanho da largura do contéudo, ideal para dispositivos grandes
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 5rem;
+
+  @media (max-width: 650px) {
+    margin: 0 2rem;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+
+  .container {
+    width: auto;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 1s ease;
+}
+
+.reveal-active {
+  transform: translateY(0px);
+  opacity: 1;
+}

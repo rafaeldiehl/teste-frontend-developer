@@ -1,0 +1,159 @@
+#quem-somos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .container {
+    display: grid;
+    align-items: center;
+
+    grid-template-areas: 
+    "i p"
+    "i t";
+
+    @media (max-width: 950px) {
+      grid-template-areas: 
+        "i p"
+        "t t";
+    }
+
+    @media (max-width: 800px) {
+      grid-template-areas: 
+        "p"
+        "t"
+        "i";
+    }
+  }
+
+  .container > img {
+    grid-area: i;
+    max-height: 500px;
+    position: relative;
+
+    // Só desktop
+    margin-right: 5rem;
+
+    @media (max-width: 800px) {
+      margin-right: 0;
+      height: 100%;
+      max-width: 100%;
+
+      display: block;  
+      margin-left: auto;  
+      margin-right: auto;  
+    }
+  }
+
+  .presentation {
+    grid-area: p;
+    margin-bottom: -2rem;
+
+    @media (max-width: 1150px) {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 950px) {
+      h2 {
+        font-size: 2.2rem;
+      }
+    }
+
+    @media (max-width: 840px) {
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 800px) {
+      text-align: center;
+      
+      h2 {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  .presentation  p {
+    line-height: 1.55rem;
+    margin: 1rem 0;
+  }
+
+  .underline {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: $blue-500;
+    text-underline-offset: 3px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 2.8rem;
+  }
+
+  .testimonial {
+    grid-area: t;
+    margin-top: -2rem;
+
+    @media (max-width: 1150px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 950px) {
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 3px solid lighten($grey-900, 10);
+    }
+
+    .message {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: lighten($grey-900, 10);
+      position: relative;
+      margin-top: 2rem;
+
+      line-height: 1.75rem;
+
+      @media (max-width: 1050px) {
+        font-size: 1rem;
+      }
+
+      i {
+        position: absolute;
+        color: $blue-400;
+        font-size: 2rem;
+        z-index: -10;
+        top: -10px;
+        left: -10px;
+        opacity: 0.7;
+      }
+    }
+
+    .people {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      @media (max-width: 950px) {
+        justify-content: center;
+      }
+
+      .data {
+        .name {
+          font-weight: 600;
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+  }
+}

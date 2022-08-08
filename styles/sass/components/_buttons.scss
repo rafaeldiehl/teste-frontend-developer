@@ -1,0 +1,21 @@
+
+// Botão de retornar para o início
+.return-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background: $blue-600;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(52, 172, 224, 1);
+	animation: pulse-blue 2s infinite;
+  opacity: 0; // mudanças via JavaScript (consultar /scripts/scroll.js)
+  transition: .4s;
+}

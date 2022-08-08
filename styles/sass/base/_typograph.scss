@@ -1,0 +1,54 @@
+// Importação da fonte
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+// Fonte padrão
+body,
+button,
+input,
+textarea {
+  font-family: 'Inter', sans-serif;
+  color: $text-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-secondary;
+}
+
+section {
+  h1, h2, h3, h4, h5, h6 {
+    color: darken($grey-900, 50);
+  }
+
+  color: $grey-900;
+}
+
+// Ajuste do tamanho do texto para responsividade
+@media (max-width: 1000px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 260px) {
+  html {
+    font-size: 75%;
+  }
+}

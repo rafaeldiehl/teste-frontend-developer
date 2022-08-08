@@ -1,0 +1,56 @@
+footer {
+  background-color: #090909;
+  border-top: 1px solid #1b1b1b;
+
+  text-align: center;
+  font-size: 0.9rem;
+
+  color: darken($text-secondary, 50);
+
+  padding: 2rem;
+
+  p {
+    line-height: 1.6rem;
+
+    a {
+      color: darken($text-secondary, 50);
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    width: 100%;
+
+    margin-bottom: 1rem;
+
+    a {
+      height: 2.5rem;
+      width: 2.5rem;
+      font-size: 1.2rem;
+
+      color: darken($text-secondary, 50);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-decoration: none;
+
+      border: 1px solid darken($text-secondary, 50);
+      border-radius: 50%;
+
+      transition: .3s;
+
+      &:hover {
+        background: $blue-600;
+        border-color: $blue-600;
+        color: white;
+      }
+    }
+  }
+}
