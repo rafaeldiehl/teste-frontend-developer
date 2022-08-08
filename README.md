@@ -96,6 +96,7 @@ As seguintes features foram adicionadas ao projeto:
 
 - Responsividade (tanto para mobile quanto para dispositivos excessivamente grandes);
 - Animações CSS (revelar no scroll, pulsão, girar);
+- Deploy do PHP na Heroku (link: https://pousadog.herokuapp.com);
 - Seção de perguntas com efeito "accordion" (abre a resposta no evento de clique);
 - Máscara para input de telefone (padrão brasileiro);
 - Envio de mensagem com a API do Whatsapp.
@@ -104,7 +105,7 @@ As seguintes features foram adicionadas ao projeto:
 
 A partir do wireframe, desenvolvi a seguinte interface de usuário.
 
-![Template da página desenvolvida](https://github.com/rafaeldiehl/teste-frontend-developer/blob/master/design/ui.png)
+![Template da página desenvolvida](https://raw.githubusercontent.com/rafaeldiehl/teste-frontend-developer/master/design/ui.png)
 
 <h2 id="status">Status do Projeto</h2>
 

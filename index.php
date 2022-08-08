@@ -1,6 +1,6 @@
 <?php
   // Variáveis de controle
-  /*$inputError = false;
+  $inputError = false;
 
   // Conexão com o Banco de dados
   $user = "root";
@@ -37,7 +37,7 @@
 
       $conn->close();
     }
-  }*/
+  }
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
