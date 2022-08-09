@@ -33,8 +33,7 @@ As tecnologias usados no projeto foram:
 
 <h3 id="backend">Backend</h3>
 
-- [PHP](https://www.php.net);
-- [Laravel](https://laravel.com).
+- [PHP](https://www.php.net).
 
 <h3 id="banco">Banco de Dados</h3>
 
